@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Neon Sans';
+    src: url('NeonSans.eot');
+    src: url('NeonSans.eot?#iefix') format('embedded-opentype'),
+        url('NeonSans.woff2') format('woff2'),
+        url('NeonSans.woff') format('woff'),
+        url('NeonSans.ttf') format('truetype'),
+        url('NeonSans.svg#NeonSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

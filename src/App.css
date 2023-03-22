@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-family: 'Trebuchet MS'
+}
+
+.currency{
+  display: flex;
+  margin-right: 100px;
+}
+
+@media screen and (max-width: 850px) {
+  .currency {
+    display: inline;
+  }
+}
+
+.currencyList {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: url(img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 28px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+  margin-left: 80px;
+}
+
+.exchange{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 520px;
+  min-height: 600px;
+  background: url(img/bg1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  text-align: center;
+  margin: 28px auto;
+  margin-left: 80px;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+.inputBox{
+  padding: 20px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  background: ;
+  width: 320px;
+  background: url(img/bg1.jpg);
+  color: #00a6ff;
+  margin-top: 30px;
+}
+
+.output{
+  margin: 100px;
+  color: #fff;
+}
+
+.check{
+  margin: 32px 0;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.currency-form {
+  margin-bottom: 32px;
+}
+
+.currency-input {
+  padding: 20px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  width: 320px;
+  background: url(img/bg2.jpg);
+  color: #ff3776;
+}
+
+.currency-button {
+  padding: 17px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    #ff3776 0%,
+    #fd0050 100%
+  );
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.currency-input.edit {
+  border: 2px solid #ffffff;
+}
+
+.currency-button.edit {
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #fd0050 100%
+  );
+  padding: auto;
+}
+
+.currency-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.currency-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #fd0050 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.currency-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    #ff3776 0%,
+    #2f000f 100%
+  );
+}
+
+.currency-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgb(254, 148, 249)
+    #fd0050 100%
+  );
+}
+
+.currency-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    #fe81a8 0%,
+    #6d0022 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+  font-size: 18px;
+}
+
+.icon-love{
+  color:rgb(255, 255, 255);
+  font-size: 18px;
+}
+
+.remove-icon{
+  color: #ffffff;
+  font-size: 23px;
+}
+
+.remove-all{
+  padding: 12px;
+  background: linear-gradient(
+    90deg,
+    rgb(61, 61, 61) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  margin: 28px;
+  border-radius: 10px;
+  border-color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.remove-all:hover{
+  background: linear-gradient(
+    90deg,
+    rgb(109, 109, 109) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  transition: 8s;
+}
+
+.remove-all p{
+  color: #e2e2e2;
+  padding: 6px;
+}
+
+
+.title{
+  color: #00000000;
+  -webkit-text-stroke: 1px #eae6fd;
+  font-family: 'Neon Sans';
+  font-size: 50px;
+  margin-left: 90px;
+  margin-top: 32px;
+  animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+
+      text-shadow:
+      0 0 4px ,
+      0 0 11px #00a9f1,
+      0 0 19px #00a9f1,
+      0 0 40px #ff3776,
+      0 0 80px #ff3776,
+      0 0 90px #00a9f1,
+      0 0 10px #ff3776,
+      0 0 15px #00a9f1;
+  
+  }
+  
+  20%, 24%, 55% {        
+      text-shadow: none;
+  }    
+}
+
+.border{
+  border-top: 2px solid #a4a4a4;
+}
+
+.price{
+  margin: 20px;
+  margin-bottom: -10px;
+  font-size: 30px;
+  color: #00a9f1;
+  padding-right: 250px;
+}
+
+
+
+
+
+
+
+@font-face {
+  font-family: 'Neon Sans';
+  src: url('font/NeonSans.eot');
+  src: url('font/NeonSans.eot?#iefix') format('embedded-opentype'),
+      url('font/NeonSans.woff2') format('woff2'),
+      url('font/NeonSans.woff') format('woff'),
+      url('font/NeonSans.ttf') format('truetype'),
+      url('font/NeonSans.svg#NeonSans') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
